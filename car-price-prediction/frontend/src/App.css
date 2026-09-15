@@ -1,0 +1,563 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f5f6f8;
+
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+.app {
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 19px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.nav-links a {
+  padding: 22px 2px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #6b7280;
+}
+
+.nav-links a:hover {
+  color: #111827;
+}
+
+.nav-links a.active {
+  color: #111827;
+
+  border-bottom: 2px solid #111827;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 48px 30px 70px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.page-header {
+  margin-bottom: 38px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 30px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.page-header p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.section-heading p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   MODEL GRID
+========================================================= */
+
+.model-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 42px;
+}
+
+
+/* =========================================================
+   MODEL CARD
+========================================================= */
+
+.model-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 9px;
+
+  padding: 24px;
+
+  min-height: 215px;
+}
+
+.model-card h3 {
+  margin: 0 0 22px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+.metric {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 46px;
+
+  border-top: 1px solid #f0f0f0;
+}
+
+.metric span {
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+.metric strong {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.r2-value {
+  font-size: 15px !important;
+}
+
+
+/* =========================================================
+   FEATURE SECTION
+========================================================= */
+
+.feature-section {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 9px;
+
+  padding: 28px 30px;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.feature-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 19px;
+}
+
+.feature-row {
+  display: grid;
+
+  grid-template-columns:
+    170px minmax(100px, 1fr) 65px;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.feature-name {
+  font-size: 14px;
+
+  color: #374151;
+}
+
+.feature-value {
+  text-align: right;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+
+/* =========================================================
+   FEATURE BAR
+========================================================= */
+
+.feature-bar {
+  width: 100%;
+
+  height: 8px;
+
+  background: #e5e7eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.feature-bar-fill {
+  height: 100%;
+
+  background: #374151;
+
+  border-radius: 20px;
+
+  transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.error-message {
+  padding: 14px 16px;
+
+  margin-top: 20px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 7px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   PREDICTION CARD
+========================================================= */
+
+.prediction-card {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 9px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  height: 44px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6b7280;
+}
+
+.full-width {
+  margin-top: 22px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.predict-button {
+  width: 100%;
+
+  height: 44px;
+
+  margin-top: 25px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.predict-button:hover {
+  background: #374151;
+}
+
+.predict-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESULT
+========================================================= */
+
+.result-box {
+  margin-top: 25px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  background: #fafafa;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+}
+
+.result-box p {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+.result-box h2 {
+  margin: 0;
+
+  font-size: 27px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .main-container {
+    padding: 35px 20px 50px;
+  }
+
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .navbar {
+    height: auto;
+
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    padding: 5px 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-row {
+    grid-template-columns:
+      120px minmax(80px, 1fr) 55px;
+
+    gap: 10px;
+  }
+
+  .feature-name {
+    font-size: 12px;
+  }
+
+  .feature-value {
+    font-size: 12px;
+  }
+
+  .page-header h1 {
+    font-size: 25px;
+  }
+
+}

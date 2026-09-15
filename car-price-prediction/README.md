@@ -147,6 +147,3 @@ Disclaimer
 
 This project is created for learning purposes. The predicted prices are estimates based on the available dataset.
 
-After pasting, press Ctrl + S.
-
-Then open the Preview of README.md in VS Code (Ctrl + Shift + V). You should see the properly formatted GitHub-style README instead of the raw Markdown.
